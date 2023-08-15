@@ -14,15 +14,13 @@ namespace ChallengeApp
         public override event GradeAddedDelegate GradeAdded;
 
         public override void AddGrade(double grade)
-        {            
+        {
         }
-        // public override void AddGradeString(string input)
-        // {            
-        // }
+
 
         public override Statistics GetStatistics()
         {
-          throw new System.NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
     }

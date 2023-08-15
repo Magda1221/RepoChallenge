@@ -23,36 +23,36 @@ namespace ChallengeApp
                 if (grade < 3 && GradeAdded != null)
                 {
                     GradeAdded(this, new EventArgs());
-                }    
-                    
-                   
+                }
+
+
             }
-                  
+
             else
             {
-             throw new ArgumentException($"Invalid grade. Write grade in range of (+/-1-6)");
-                   
+                throw new ArgumentException($"Invalid grade. Write grade in range of (+/-1-6)");
+
             }
         }
 
         public override Statistics GetStatistics()
         {
-             {
-            var result = new Statistics();
-            for (var index = 0; index < grades.Count; index += 1)
             {
-                result.Add(grades[index]);
+                var result = new Statistics();
+                for (var index = 0; index < grades.Count; index += 1)
+                {
+                    result.Add(grades[index]);
+                }
+                return result;
             }
-            return result;
-        }
         }
     }
 
-        
 
-    }
-             
-    
+
+}
+
+
 
 
 

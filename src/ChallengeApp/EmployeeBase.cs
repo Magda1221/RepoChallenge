@@ -14,7 +14,7 @@ namespace ChallengeApp
         public abstract event GradeAddedDelegate GradeAdded3;
 
         public abstract void AddGrade(double grade);
-        // public abstract void AddGradeString(string input);
+
         public abstract Statistics GetStatistics();
         public abstract event GradeAddedDelegate GradeAdded;
     }
